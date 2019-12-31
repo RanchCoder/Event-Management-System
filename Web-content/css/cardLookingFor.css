@@ -1,0 +1,11 @@
+.productBox{
+    padding:0;
+    margin-top:10%;
+    width:20%;
+    height:10%;
+    border:1px solid black;
+    border-radius:5px;
+    text-align:center;
+}
+  
+.heading h1{font-size:2vw;width:90%;padding:15px;}
