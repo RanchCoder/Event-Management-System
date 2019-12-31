@@ -1,0 +1,4 @@
+create table city(
+ cityId int AUTO_INCREMENT PRIMARY KEY,
+ cityName varchar(25) NOT NULL,
+ );

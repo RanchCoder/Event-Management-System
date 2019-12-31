@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        body{
+            text-align:center;
+            color:white;
+        }
+
+        #grid{
+            display:grid;
+            grid-template-columns:repeat(4,1fr);
+            grid-auto-rows:minmax(100px,auto);
+            max-width:80%;
+            margin:0 auto;
+            grid-gap:10px;
+            grid-template-areas:
+            "header header header header"
+            "aside aside main main"
+            "nav nav main main"
+            "section section section section"
+            "section section section section"
+            "footer footer footer footer";
+        }
+        
+
+        header{
+            grid-area:header;
+        }
+
+        aside{
+            grid-area:aside;
+        }
+        nav{
+            grid-area:nav;
+        }
+        main{
+            grid-area:main;
+        }
+        section{
+            grid-area:section;
+        }
+        footer{
+            grid-area:footer;
+        }
+
+        #grid>*{
+            background:rgb(125, 197, 255);
+            padding:30px;
+        }
+
+       
+    </style>
+</head>
+
+<body> 
+
+    <div id="grid">
+        <header>Header</header>
+        <aside>Aside</aside>
+        <nav>Nav</nav>
+        <main>Main</main>
+        <section>Section</section>
+        <footer>footer</footer>
+
+
+
+    </div>
+
+</body>
+
+</html>

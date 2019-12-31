@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            color: white;
+        }
+
+        #grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 2em;
+            width: 90%;
+            margin: 0 auto;
+            grid-auto-rows: minmax(200px, 280px);
+            grid-template-areas:
+                "img1 img2"
+
+                "img3 img4"
+
+                "img5 img6"
+
+
+
+        }
+
+        @media only screen and (max-width: 400px) {
+
+
+            #grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 2em;
+                width: 90%;
+                margin: 0 auto;
+                grid-auto-rows: minmax(200px, 280px);
+                grid-template-areas:
+                    "img1 img2"
+
+                    "img3 img4"
+
+                    "img5 img6"
+
+
+
+            }
+
+
+
+        }
+
+
+        @media only screen and (max-width: 400px) {
+
+
+            #grid {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 2em;
+                width: 90%;
+                margin: 0 auto;
+                grid-auto-rows: minmax(200px, 280px);
+                grid-template-areas:
+                    "img1"
+                    "img2"
+
+                    "img3"
+                    "img4"
+                    "img5"
+                    "img6"
+
+
+
+            }
+
+
+
+        }
+
+        @media only screen and (min-width: 768px) {
+
+
+            #grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 2em;
+                width: 90%;
+                margin: 0 auto;
+                grid-auto-rows: minmax(200px, 280px);
+                grid-template-areas:
+                    "img1 img2 img3"
+
+
+
+                    "img4 img5 img6"
+
+
+
+            }
+
+
+
+        }
+
+
+        .img1 {
+            grid-area: img1;
+            background-image: url("../images/GridVideo.jpg");
+        }
+
+        .img2 {
+            grid-area: img2;
+        }
+
+        .img3 {
+            grid-area: img3;
+        }
+
+        .img4 {
+            grid-area: img4;
+        }
+
+        .img5 {
+            grid-area: img5;
+        }
+
+        .img6 {
+            grid-area: img6;
+        }
+
+        #grid>* {
+            background: gray;
+            padding: 40px;
+        }
+
+        #grid>*:hover{
+            box-shadow:2px 2px 3px 3px rgb(194, 184, 184);
+        }
+
+        #grid>.img1 {
+            background-image: url("../images/GridVideo.jpg");
+            background-size: 100% 280px;
+        }
+
+
+        #grid>.img2 {
+            background-image: url("../images/GridMakeUp.jpg");
+            background-size: 100% 280px;
+        }
+
+        #grid>.img3 {
+            background-image: url("../images/GridSound.jpg");
+            background-size: 100% 280px;
+        }
+
+        #grid>.img4 {
+            background-image: url("../images/GridMehendi.jpg");
+            background-size: 100% 280px;
+        }
+
+        #grid>.img5 {
+            background-image: url("../images/GridLocation.jpg");
+            background-size: 100% 280px;
+        }
+
+
+        #grid>.img6 {
+            background-image: url("../images/GridFood.jpg");
+            background-size: 100% 280px;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+
+    <div id="grid">
+
+        <div class="img1" id="img1">
+            <h1 style="margin-top:50%">VideoGraphy</h1>
+        </div>
+        <div class="img2" id="img2"><h1 style="margin-top:50%">Costumes & Dress</h1></div>
+        <div class="img3" id="img3"><h1 style="margin-top:50%">Sound System</h1></div>
+        <div class="img4" id="img4"><h1 style="margin-top:50%">Make Up</h1></div>
+        <div class="img5" id="img5"><h1 style="margin-top:50%">Location</h1></div>
+        <div class="img6" id="img6"><h1 style="margin-top:50%">Catering</h1></div>
+
+
+    </div>
+
+</body>
+
+</html>
